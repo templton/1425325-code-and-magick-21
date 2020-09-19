@@ -1,22 +1,22 @@
 /* eslint-disable no-var */
 'use strict';
-var CLOUD_WIDTH = 420;
-var CLOUD_HEIGTH = 270;
-var CLOUD_X = 100;
-var CLOUD_Y = 10;
-var GAP = 10;
-var BAR_GAP = 50;
-var MSG_HEIGHT = 50;
-var TEXT_HEIGHT = 20;
-var BAR_HEIGHT = 150;
-var BAR_WIDTH = 40;
+const CLOUD_WIDTH = 420;
+const CLOUD_HEIGTH = 270;
+const CLOUD_X = 100;
+const CLOUD_Y = 10;
+const GAP = 10;
+const BAR_GAP = 50;
+const MSG_HEIGHT = 50;
+const TEXT_HEIGHT = 20;
+const BAR_HEIGHT = 150;
+const BAR_WIDTH = 40;
 
-var renderCloud = function (ctx, x, y, color) {
+let renderCloud = function (ctx, x, y, color) {
   ctx.fillStyle = color;
   ctx.fillRect(x, y, CLOUD_WIDTH, CLOUD_HEIGTH);
 };
 
-var getMaxElement = function (arr) {
+let getMaxElement = function (arr) {
   let maxElement = arr[0];
 
   for (let i = 0; i < arr.length; i++) {
@@ -49,7 +49,7 @@ window.renderStatistics = function (ctx, players, times) {
 
   let maxTime = getMaxElement(times);
 
-  for (var i = 0; i < players.length; i++) {
+  for (let i = 0; i < players.length; i++) {
     ctx.fillText(
         Math.round(times[i]),
         CLOUD_X + BAR_WIDTH + (BAR_WIDTH + BAR_GAP) * i,
