@@ -19,24 +19,24 @@ function getRandom(max) {
 
 const wizards = [
   {
-    name: WIZARD_NAMES[getRandom(7)] + ` ` + WIZARD_SURNAMES[getRandom(7)],
-    coatColor: COAT_COLORS[getRandom(6)],
-    eyesColor: EYES_COLORS[getRandom(5)]
+    name: `${WIZARD_NAMES[getRandom(WIZARD_NAMES.length)]} ${WIZARD_SURNAMES[getRandom(WIZARD_SURNAMES.length)]}`,
+    coatColor: COAT_COLORS[getRandom(COAT_COLORS.length)],
+    eyesColor: EYES_COLORS[getRandom(EYES_COLORS.length)]
   },
   {
-    name: WIZARD_NAMES[getRandom(7)] + ` ` + WIZARD_SURNAMES[getRandom(7)],
-    coatColor: COAT_COLORS[getRandom(6)],
-    eyesColor: EYES_COLORS[getRandom(5)]
+    name: `${WIZARD_NAMES[getRandom(WIZARD_NAMES.length)]} ${WIZARD_SURNAMES[getRandom(WIZARD_SURNAMES.length)]}`,
+    coatColor: COAT_COLORS[getRandom(COAT_COLORS.length)],
+    eyesColor: EYES_COLORS[getRandom(EYES_COLORS.length)]
   },
   {
-    name: WIZARD_NAMES[getRandom(7)] + ` ` + WIZARD_SURNAMES[getRandom(7)],
-    coatColor: COAT_COLORS[getRandom(6)],
-    eyesColor: EYES_COLORS[getRandom(5)]
+    name: `${WIZARD_NAMES[getRandom(WIZARD_NAMES.length)]} ${WIZARD_SURNAMES[getRandom(WIZARD_SURNAMES.length)]}`,
+    coatColor: COAT_COLORS[getRandom(COAT_COLORS.length)],
+    eyesColor: EYES_COLORS[getRandom(EYES_COLORS.length)]
   },
   {
-    name: WIZARD_NAMES[getRandom(7)] + ` ` + WIZARD_SURNAMES[getRandom(7)],
-    coatColor: COAT_COLORS[getRandom(6)],
-    eyesColor: EYES_COLORS[getRandom(5)]
+    name: `${WIZARD_NAMES[getRandom(WIZARD_NAMES.length)]} ${WIZARD_SURNAMES[getRandom(WIZARD_SURNAMES.length)]}`,
+    coatColor: COAT_COLORS[getRandom(COAT_COLORS.length)],
+    eyesColor: EYES_COLORS[getRandom(EYES_COLORS.length)]
   }
 ];
 
